@@ -1,7 +1,5 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-// Interface:
-import { Login__Props } from "../interfaces/Login"
 // Styles:
 import Styles from "../styles/pages/Login.module.css"
 import UserImg from "../assets/user.png"
@@ -30,7 +28,7 @@ const Login: React.FC = () => {
                 <div className={Styles["input-struct-container"]}>
                     <div className={Styles["input-struct"]}>
                         <img src={UserImg} alt="Username" />
-                        <input 
+                        <input
                             type="text"
                             name="username"
                             className={Styles["input-username"]} 

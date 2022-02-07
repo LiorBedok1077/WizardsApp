@@ -10,10 +10,12 @@ const App: React.FC = () => {
     <div className="App">
       <Navbar />
       <Routes>
+        {/* sign in page */}
         <Route 
           path="/signin"
           element={<Login />}
-        />
+          />
+          {/* sign up page */}
         <Route 
           path="/signup"
           element={<Register />}

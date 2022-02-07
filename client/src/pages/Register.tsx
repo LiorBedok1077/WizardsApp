@@ -1,8 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import { getStyles } from "../controllers"
-// Interface:
-import { Login__Props } from "../interfaces/Login"
 // Styles:
 import Styles from "../styles/pages/Login.module.css"
 import UserImg from "../assets/user.png"
