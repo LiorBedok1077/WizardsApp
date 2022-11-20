@@ -1,0 +1,113 @@
+/* Styles for WizardEditor : Input modules */
+
+/* Global styling for all inputs */
+.Input {
+  width: 100%;
+  min-height: 3rem;
+  height: fit-content;
+  /* position */
+  padding: 0.6rem 1rem;
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem 0;
+  /* animation */
+  animation: onEnterQ 0.6s 0.4s forwards;
+  /* init state */
+  border-left: 2px solid #4ef;
+}
+.Input h3 {
+  color: #333;
+  font-weight: 400;
+}
+.Input input:not([type="checkbox"], [type="radio"]),
+.Input textarea {
+  border: none;
+  outline: none;
+  padding: 0 0.6rem;
+  background: #ccc;
+  /* dimensions */
+  width: 12rem;
+  max-width: 100%;
+  min-width: 12rem;
+  height: 1.5rem;
+  max-height: 16rem;
+  min-height: 1.5rem;
+  /* position */
+  margin-top: 0.7rem;
+}
+.Input.Input-List {
+  padding-top: 0.4rem;
+}
+.Input.Input-Partial {
+  height: 1rem;
+  min-height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: none !important;
+}
+.Input.Input-Partial.Input-Image {
+  /* margin: 3.8rem 0 3rem 0; */
+  height: 8rem;
+}
+.Input.Input-Partial input {
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+.Input.Input-List .Input-container {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.8rem;
+}
+.Input.Input-List.Input-ImageList .Input-container {
+  /* layout */
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  /* background-color: #aaa; */
+}
+.Input.Input-List .Input-container .Input.Input-Partial {
+  margin: 0;
+  margin-bottom: 0.4rem;
+  width: min-content;
+}
+.Input.Input-Partial.selected-image > img {
+  outline: 3px solid #00aaaaaa;
+}
+.Input.Input-Partial > img {
+  height: 8rem;
+  max-width: 15rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  /* animation */
+  transition: transform 0.2s ease;
+}
+.Input.Input-Partial > img:hover {
+  transform: scale(1.02);
+}
+
+/*// TEXT
+// TEXTAREA
+// SECURED_INPUT
+// RANGE
+// CHECKBOX
+// IMAGE
+// RADIOBOX_LIST
+// CHECKBOX_LIST
+// LISTS_LIST
+// RADIOBOX */
+
+/* animations */
+
+@keyframes onEnterQ {
+  to {
+    border-left: 2px solid #4a416499;
+  }
+}

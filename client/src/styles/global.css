@@ -1,0 +1,50 @@
+/* Global styles */
+
+:root {
+  --navbar_height: 5rem;
+  --app_def_color: #4a4164;
+}
+
+* {
+  /* default global styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  /* scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+}
+
+*::selection {
+  background-color: #55555533;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+/* Scrollbar style */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 100px;
+}
+
+html,
+body,
+.Index,
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  background-color: #f7f4f4;
+}
